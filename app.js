@@ -1,3 +1,8 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/dino')
+    .then(console.log('Connected to MongoDB'))
+    .catch(err => console.error("Could not connect to MongoDB"));
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -9,5 +14,5 @@ app.listen(port,() => {
 })
 
 app.get('/',(req,res) => {
-    res.send("TEST");
+    res.send("You have");
 })
