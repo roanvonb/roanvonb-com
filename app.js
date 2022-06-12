@@ -9,5 +9,5 @@ app.listen(port,() => {
 })
 
 app.get('/',(req,res) => {
-    res.send("FET IN VOICE NERD");
+    res.send("TEST");
 })
